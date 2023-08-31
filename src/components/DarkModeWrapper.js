@@ -1,9 +1,9 @@
 import React from "react";
 
-function DarkModeWrapper(props) {
+function DarkModeWrapper({ darkMode, children }) {
   return (
-    <div id="wrapper" className={props.darkMode ? "dark-mode" : ""}>
-      {props.children}
+    <div id="wrapper" className={darkMode ? "dark-mode" : ""}>
+      {children}
     </div>
   );
 }
